@@ -1,0 +1,10 @@
+{
+  "name": "aks-demo",
+  "version": "1.0.0",
+  "description": "Simple AKS demo app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {}
+}
