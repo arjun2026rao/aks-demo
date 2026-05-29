@@ -17,7 +17,7 @@ jobs:
       run: docker login aksdemomallik.azurecr.io -u ${{ secrets.ACR_USERNAME }} -p ${{ secrets.ACR_PASSWORD }}
 
     - name: Build image
-      run: docker build -t aksdemomallik.azurecr.io/aks-demo:v1 .
+      run: docker build -t aksdemomallik.azurecr.io/aks-demo:v2 .
 
     - name: Push image
-      run: docker push aksdemomallik.azurecr.io/aks-demo:v1
+      run: docker push aksdemomallik.azurecr.io/aks-demo:v2
