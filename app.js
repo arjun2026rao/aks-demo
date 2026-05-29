@@ -11,7 +11,5 @@ server.listen(port, '0.0.0.0', () => {
     console.log(`Server running on port ${port}`);
 });
 
-// ✅ THIS LINE FIXES YOUR ISSUE
-setInterval(() => {
-    console.log("App is running...");
-}, 5000);
+// ✅ KEEP PROCESS ALIVE
+process.stdin.resume();
