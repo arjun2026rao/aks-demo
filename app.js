@@ -1,15 +1,12 @@
-const http = require('http');
+const express = require('express');
 
+const app = express();
 const port = 3000;
 
-const server = http.createServer((req, res) => {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('✅ Hello from AKS - SUCCESS');
+app.get('/', (req, res) => {
+  res.send('✅ Hello from AKS – WORKING SUCCESS!');
 });
 
-server.listen(port, '0.0.0.0', () => {
-    console.log(`Server running on port ${port}`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`✅ App running on port ${port}`);
 });
-
-// ✅ KEEP PROCESS ALIVE
-process.stdin.resume();
